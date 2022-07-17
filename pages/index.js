@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Charlie Codees</title>
+        <title>Charlie Codes</title>
         <meta
           name="description"
           content="programming, art, content creation, music, javascript, html, css"
@@ -27,8 +27,8 @@ export default function Home() {
 
         <div className={styles.grid}>
           <h3 className="title">
-            <Link href="/posts/first-post" className={styles.link}>
-              <a>What this blog is and is not.</a>
+            <Link href="/posts/first-post">
+              <a className={styles.link}>What this blog is and is not.</a>
             </Link>
           </h3>
         </div>

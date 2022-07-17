@@ -1,0 +1,79 @@
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 5em;
+  /* background-color: red; */
+}
+
+.postContainer {
+  line-height: 2.1em;
+  margin: 1.5em 0;
+  padding: 0 0.5em;
+}
+
+.postContainer .title {
+  font-size: 4em;
+  font-weight: 800;
+}
+
+.postContainer p,
+.postContainer .postContents {
+  font-weight: 300;
+}
+
+.iconContainer {
+  align-self: center;
+
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.iconContainer .icons {
+  font-size: 3em;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.iconContainer .icons:hover {
+  color: #abc;
+}
+
+.homeLink {
+  font-size: 1.5em;
+  text-align: right;
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 980px) {
+  .container {
+    grid-template-columns: 1fr;
+    /* background-color: orange; */
+    padding: 2em;
+    gap: 0;
+  }
+
+  .postContainer .title {
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+
+  .iconContainer {
+    flex-direction: row;
+    height: 100px;
+    /* background-color: red; */
+    order: -1;
+    /* max-width: 600px; */
+  }
+
+  .iconContainer .icons {
+    font-size: 2.5em;
+  }
+}
