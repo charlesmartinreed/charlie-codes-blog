@@ -108,6 +108,12 @@
   margin-left: 0.5rem;
 }
 
+.grid a {
+  font-weight: 700;
+  color: #abc;
+  border-bottom: 2px solid #abc;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
