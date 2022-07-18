@@ -2,12 +2,13 @@ import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
 import styles from "../../styles/Post.module.css";
-import { IconContext } from "react-icons";
-import { FaFacebook, FaTwitter, FaTiktok } from "react-icons/fa";
+import Layout from "../../components/Layout";
+
+import { FaFacebook, FaTwitter, FaShare } from "react-icons/fa";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -53,8 +54,10 @@ export default function FirstPost() {
             ab id alias eos dolores harum eum fuga ad maiores ut doloribus.
             Ullam in reiciendis hic?
           </p>
-          <div className={styles.homeLink}>
-            <Link href="/">Return Home</Link>
+          <div>
+            <Link href="/">
+              <button className={styles.homeBtn}>Return Home</button>
+            </Link>
           </div>
         </div>
         <div className={styles.iconContainer}>
@@ -64,11 +67,11 @@ export default function FirstPost() {
           <a href="#!" title="Share on Twitter">
             <FaTwitter className={styles.icons} />
           </a>
-          <a href="#!" title="Share on TikTok">
-            <FaTiktok className={styles.icons} />
+          <a href="#!" title="Copy Link To Blog Post">
+            <FaShare className={styles.icons} />
           </a>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }

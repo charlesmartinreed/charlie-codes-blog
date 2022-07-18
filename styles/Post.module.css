@@ -46,10 +46,21 @@
   color: #abc;
 }
 
-.homeLink {
-  font-size: 1.5em;
-  text-align: right;
-  padding-top: 1em;
+.homeBtn {
+  margin-top: 0.5em;
+  font-size: 1.15em;
+  padding: 0.5em 1.5em;
+  border: none;
+  border-radius: 0.25em;
+  background: #333333;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: #eaeaea;
+}
+
+.homeBtn:hover {
+  transform: translateX(5px);
+  background-color: rgba(41, 41, 41, 0.8);
 }
 
 @media screen and (max-width: 980px) {

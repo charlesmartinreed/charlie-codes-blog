@@ -7,15 +7,6 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Charlie Codes</title>
-        <meta
-          name="description"
-          content="programming, art, content creation, music, javascript, html, css"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Charlie Codes</h1>
 
@@ -33,10 +24,6 @@ export default function Home() {
           </h3>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <span className={styles.logo}>✌🏿,❤️ and🕺🏿</span>
-      </footer>
     </div>
   );
 }
