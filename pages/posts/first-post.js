@@ -1,23 +1,14 @@
 import Link from "next/link";
 import Head from "next/head";
 import Script from "next/script";
-import styles from "../../styles/Post.module.css";
 import Layout from "../../components/Layout";
+import styles from "../../styles/Post.module.css";
 
 import { FaFacebook, FaTwitter, FaShare } from "react-icons/fa";
 
 export default function FirstPost() {
   return (
-    <>
-      <Head>
-        <title>First Post</title>
-      </Head>
-      <Script
-        src=""
-        strategy="lazyOnload"
-        onLoad={() => console.log("script was succesfully loaded")}
-      ></Script>
-
+    <Layout>
       <div className={styles.container}>
         <div className={styles.postContainer}>
           <h1 className={styles.title}>First Post!</h1>
@@ -54,11 +45,6 @@ export default function FirstPost() {
             ab id alias eos dolores harum eum fuga ad maiores ut doloribus.
             Ullam in reiciendis hic?
           </p>
-          <div>
-            <Link href="/">
-              <button className={styles.homeBtn}>Return Home</button>
-            </Link>
-          </div>
         </div>
         <div className={styles.iconContainer}>
           <a href="#!" title="Share on Facebook">
@@ -72,6 +58,6 @@ export default function FirstPost() {
           </a>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
