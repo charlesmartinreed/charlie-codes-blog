@@ -3,9 +3,9 @@ import styles from "../styles/Layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-export const siteTitle = "Charlie Codes";
+export const siteTitle = "Minimum Viable";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, title }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -13,7 +13,8 @@ export default function Layout({ children, home }) {
           name="description"
           content="programming, art, content creation, music, javascript, html, css"
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content={title ? title : siteTitle} />
+        <title>{title ? title : siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

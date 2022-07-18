@@ -19,11 +19,43 @@ export default function Home() {
           </p>
 
           <div className={styles.grid}>
-            <h3 className="title">
-              <Link href="/posts/first-post">
-                <a className={styles.link}>What this blog is and is not.</a>
-              </Link>
-            </h3>
+            <ul>
+              <li>
+                <h3>
+                  <Link href="/posts/first-post">
+                    <a className={styles.link}>What this blog is and is not.</a>
+                  </Link>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/posts/first-post">
+                    <a className={styles.link}>What this blog is and is not.</a>
+                  </Link>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/posts/first-post">
+                    <a className={styles.link}>What this blog is and is not.</a>
+                  </Link>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/posts/first-post">
+                    <a className={styles.link}>What this blog is and is not.</a>
+                  </Link>
+                </h3>
+              </li>
+              <li>
+                <h3>
+                  <Link href="/posts/first-post">
+                    <a className={styles.link}>What this blog is and is not.</a>
+                  </Link>
+                </h3>
+              </li>
+            </ul>
           </div>
         </main>
       </div>

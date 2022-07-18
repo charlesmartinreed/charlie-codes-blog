@@ -9,6 +9,7 @@
 
 .postContainer {
   line-height: 2.1em;
+  margin-left: 1em;
   /* margin: 1.5em 0; */
   /* padding: 0 0.5em; */
   /* background-color: red; */
@@ -69,6 +70,10 @@
     /* background-color: orange; */
     padding: 2em;
     gap: 0;
+  }
+
+  .postContainer {
+    margin-left: 0;
   }
 
   .postContainer .title {

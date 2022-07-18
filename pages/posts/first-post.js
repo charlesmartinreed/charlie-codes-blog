@@ -4,14 +4,15 @@ import Script from "next/script";
 import Layout from "../../components/Layout";
 import styles from "../../styles/Post.module.css";
 
-import { FaFacebook, FaTwitter, FaShare } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaShare, FaHome } from "react-icons/fa";
 
 export default function FirstPost() {
+  const title = "First Post";
   return (
-    <Layout>
+    <Layout title={title}>
       <div className={styles.container}>
         <div className={styles.postContainer}>
-          <h1 className={styles.title}>First Post!</h1>
+          <h1 className={styles.title}>{title}</h1>
           <p className={styles.postContents}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             voluptatibus, accusamus animi quia ex suscipit dicta fugiat error
@@ -47,6 +48,11 @@ export default function FirstPost() {
           </p>
         </div>
         <div className={styles.iconContainer}>
+          <Link href="/">
+            <a title="Back to Home Page">
+              <FaHome className={styles.icons} />
+            </a>
+          </Link>
           <a href="#!" title="Share on Facebook">
             <FaFacebook className={styles.icons} />
           </a>
