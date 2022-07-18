@@ -8,7 +8,7 @@ import { FaFacebook, FaTwitter, FaShare } from "react-icons/fa";
 
 export default function FirstPost() {
   return (
-    <Layout>
+    <>
       <Head>
         <title>First Post</title>
       </Head>
@@ -72,6 +72,6 @@ export default function FirstPost() {
           </a>
         </div>
       </div>
-    </Layout>
+    </>
   );
 }

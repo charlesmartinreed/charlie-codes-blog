@@ -1,8 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
-const siteTitle = "Charlie Codes";
+import utilStyles from "../styles/utils.module.css";
 
-export default function Layout({ children }) {
+export const siteTitle = "Charlie Codes";
+
+export default function Layout({ children, home }) {
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 }
