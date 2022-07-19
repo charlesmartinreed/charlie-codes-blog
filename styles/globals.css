@@ -26,3 +26,9 @@ ol {
   list-style: none;
   padding: 1.1em 0;
 }
+
+small {
+  color: #777;
+  display: block;
+  margin: 1em;
+}

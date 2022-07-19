@@ -133,8 +133,8 @@
 .grid .link {
   font-weight: 700;
   color: #abc;
-  padding-bottom: 3px;
-  border-bottom: 2px solid #abc;
+  /* padding-bottom: 3px; */
+  /* border-bottom: 2px solid #abc; */
 }
 
 @media (max-width: 600px) {
