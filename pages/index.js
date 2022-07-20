@@ -19,44 +19,6 @@ export default function Home({ posts }) {
             </code>
           </p>
 
-          {/* <ul>
-      <li>
-        <h3>
-          <Link href="/posts/first-post">
-            <a className={styles.link}>What this blog is and is not.</a>
-          </Link>
-        </h3>
-      </li>
-      <li>
-        <h3>
-          <Link href="/posts/first-post">
-            <a className={styles.link}>What this blog is and is not.</a>
-          </Link>
-        </h3>
-      </li>
-      <li>
-        <h3>
-          <Link href="/posts/first-post">
-            <a className={styles.link}>What this blog is and is not.</a>
-          </Link>
-        </h3>
-      </li>
-      <li>
-        <h3>
-          <Link href="/posts/first-post">
-            <a className={styles.link}>What this blog is and is not.</a>
-          </Link>
-        </h3>
-      </li>
-      <li>
-        <h3>
-          <Link href="/posts/first-post">
-            <a className={styles.link}>What this blog is and is not.</a>
-          </Link>
-        </h3>
-      </li>
-    </ul> */}
-
           <Posts posts={posts} />
         </main>
       </div>
@@ -70,31 +32,31 @@ export async function getStaticProps() {
       id: 1,
       title: "GitHub Co-Pilot does kinda feel like magic, sometimes.",
       slug: "github-copilot-does-kinda-feel-like-magic-sometimes",
-      date: "June 27, 2022",
+      date: new Date().toLocaleDateString(),
     },
     {
       id: 2,
       title: "Programming is 50% problem solving, 50% problem creation",
       slug: "programming-is-50-problem-solving-50-problem-creation",
-      date: "May 15, 2022",
+      date: new Date().toLocaleDateString(),
     },
     {
       id: 3,
       title: "JavaScript is stuck in its Awkward Teen phase.",
       slug: "javascript-is-stuck-in-its-awkward-teen-phase",
-      date: "April 3, 2022",
+      date: new Date().toLocaleDateString(),
     },
     {
       id: 4,
       title: "CSS modules are starting to grow on me.",
       slug: "css-modules-are-starting-to-grow-on-me",
-      date: "March 9, 2022",
+      date: new Date().toLocaleDateString(),
     },
     {
       id: 5,
       title: "What this blog is and isn't",
       slug: "what-this-blog-is-and-isnt",
-      date: "February 11, 2022",
+      date: new Date().toLocaleDateString(),
     },
   ];
 
