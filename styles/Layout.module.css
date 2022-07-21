@@ -140,8 +140,6 @@
   font-weight: 700;
   color: #abc;
   font-size: 1.1em;
-  /* padding-bottom: 3px; */
-  /* border-bottom: 2px solid #abc; */
 }
 
 @media screen and (max-width: 960px) {
@@ -149,6 +147,10 @@
     flex-direction: column;
     gap: 10px;
     padding-top: 0;
+  }
+
+  .footer a {
+    font-size: 0.9em;
   }
 }
 

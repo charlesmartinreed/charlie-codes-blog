@@ -2,16 +2,18 @@ import Link from "next/link";
 import styles from "../styles/Layout.module.css";
 
 export default function Posts({ posts }) {
+  // const { id, slug, title, dateCreated, summary, content } = posts;
+
   return (
     <>
       <div className={styles.grid}>
         <ul>
-          {posts.map((post) => (
-            <li key={post.id}>
-              <Link href={`/posts/${post.slug}`}>
-                <a className={styles.link}>{post.title}</a>
+          {posts.map(({ id, slug, title, dateCreated, summary, content }) => (
+            <li key={id}>
+              <Link href={`/posts/${slug}`}>
+                <a className={styles.link}>{title}</a>
               </Link>
-              <small>{post.date}</small>
+              <small>{dateCreated}</small>
             </li>
           ))}
         </ul>
