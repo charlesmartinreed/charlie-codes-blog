@@ -18,3 +18,8 @@
   ```
 
 - Next.js uses PostCSS as a compiler. Create `postcss.config.js` at the top-level to customize the configuration.
+
+- **Static-site generation** means the HTML is generated at build time and _reused_ on each request. In DEVELOPMENT mode, all pages use static site generation.
+- **Server-side rendering** _generates the HTML on each request_
+- Fast sites prefer SSG because the page only has to be built once before being served by the CDN.
+- Obviously server-side rendering is necessary in scenarios when data is frequently updated or content changes according to the request itself, such as a live-blog or anything that leverages real time communication.
