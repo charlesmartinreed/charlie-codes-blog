@@ -5,13 +5,17 @@ import Link from "next/link";
 
 export const siteTitle = "Minimum Viable";
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, content }) {
   return (
     <div className={styles.container}>
       <Head>
         <meta
-          name="description"
-          content="programming, art, content creation, music, javascript, html, css"
+          name="og:description"
+          content={
+            content
+              ? content
+              : "programming, art, content creation, music, javascript, html, css"
+          }
         />
         <meta name="og:title" content={title ? title : siteTitle} />
         <title>{title ? title : siteTitle}</title>
@@ -28,10 +32,10 @@ export default function Layout({ children, title }) {
           <a>Archives</a>
         </Link>
         <Link href="/projects">
-          <a>My Works</a>
+          <a>Projects</a>
         </Link>
-        <Link href="/about">
-          <a>A Bit About Me</a>
+        <Link href="/contact">
+          <a>Reach Out</a>
         </Link>
       </footer>
     </div>

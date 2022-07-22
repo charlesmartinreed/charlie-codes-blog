@@ -11,12 +11,16 @@ import { FaFacebook, FaTwitter, FaShare, FaHome } from "react-icons/fa";
 
 export default function FirstPost({ postData }) {
   return (
-    <Layout title={postData.title}>
+    <Layout title={postData.title} content={postData.summary}>
       <div className={styles.container}>
         <div className={styles.postContainer}>
           <h1 className={styles.title}>{postData.title}</h1>
           <h4 className={styles.postDate}>{postData.dateCreated}</h4>
-          <p className={styles.postContents}>{postData.content}</p>
+          {/* <p className={styles.postContents}>{postData.content}</p> */}
+          <p
+            className={styles.postContents}
+            dangerouslySetInnerHTML={{ __html: postData.contentHTML }}
+          />
         </div>
         <div className={styles.iconContainer}>
           <Link href="/">
@@ -62,7 +66,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // fetch data for the blog post, using the slug pulled from params
-  const postData = getPostData(params.slug);
+  const postData = await getPostData(params.slug);
   return {
     props: {
       postData,

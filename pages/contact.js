@@ -1,10 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
 import Layout from "../components/Layout";
 import styles from "../styles/Layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 
 export default function About() {
   return (
-    <Layout title={"My name is Charles"}>
+    <Layout title={"Reach Out"}>
       <h1 className={utilStyles.heading2Xl}>👋🏿 I'm Charles. </h1>
       <p className={utilStyles.headingLg}>In simple terms, I'm a programmer.</p>
       <div className={utilStyles.textContainer}>
