@@ -1,5 +1,6 @@
 .container {
   max-width: 1200px;
+  width: 85%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -12,33 +13,37 @@
   margin-left: 1em;
   /* margin: 1.5em 0; */
   /* padding: 0 0.5em; */
-  /* background-color: red; */
 }
 
 .postContainer .title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 800;
+  line-height: 1.1em;
+}
+
+.postContainer .postDate {
+  color: #777;
+  font-weight: 300;
 }
 
 .postContainer p,
 .postContainer .postContents {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .iconContainer {
-  align-self: center;
+  /* align-self: center; */
 
   display: flex;
   height: 400px;
   flex-direction: column;
-  /* background-color: red; */
   align-items: center;
   justify-content: space-evenly;
   /* background-color: orange; */
 }
 
 .iconContainer .icons {
-  font-size: 3em;
+  font-size: 2em;
   color: #333;
   transition: all 0.3s ease-in-out;
 }
@@ -90,6 +95,6 @@
   }
 
   .iconContainer .icons {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
