@@ -54,7 +54,6 @@ export default function FirstPost({ postData }) {
 export async function getStaticPaths() {
   // return an array of possible slug values
   const paths = getAllPostSlugs();
-  console.log(paths);
   return {
     paths,
     fallback: false,

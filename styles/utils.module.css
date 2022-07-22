@@ -17,12 +17,31 @@
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
-  margin: 1rem 0;
+  margin: 0 0 2rem;
+  font-weight: 400;
 }
 
 .headingMd {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+
+.textContainer {
+  /* min-width: 60%; */
+  /* max-width: 60%; */
+  width: 70%;
+  line-height: 1.8em;
+}
+
+.textContainer p {
+  margin: 2em 0;
+}
+
+.textContainer a {
+  font-weight: 700;
+  color: #abc;
+  font-size: 1.1em;
+  border-bottom: 3px solid #abc;
 }
 
 .borderCircle {
