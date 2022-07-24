@@ -1,7 +1,7 @@
 .projectContainer {
-  height: 40vh;
+  min-height: 40vh;
   display: grid;
-  grid-template-columns: 40% 30% 30%;
+  grid-template-columns: 55% 35%;
   width: 85%;
   box-shadow: 12px 8px 28px rgba(51, 51, 51, 0.3);
   border-radius: 8px;
@@ -13,9 +13,8 @@
 .projectContainer .heading2Xl {
   font-size: 1.9em;
   line-height: 1.2;
-  letter-spacing: -0.05rem;
   margin: 1rem 0;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .projectContainer h1,
@@ -26,9 +25,6 @@
 .projectContainer h6 {
   text-align: center;
   padding-bottom: 0.75em;
-}
-
-.projectContainer .clientDescription {
 }
 
 .projectContainer .imgContainer {
@@ -48,32 +44,44 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  /* justify-self: center; */
 }
 
 .projectContainer .descriptionContainer {
   text-align: center;
   line-height: 1.6em;
+  text-align: right;
 }
 
 .projectContainer .flavorText {
   font-size: 0.9em;
-  font-style: italic;
+  width: 90%;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
 }
 
 .projectContainer a {
-  /* display: block; */
-  /* color: rgba(170, 187, 204, 1); */
+  cursor: pointer;
   color: #777;
-  /* border-radius: 4px; */
-  /* padding: 1em 3em; */
   margin: 0.7em;
-  text-align: center;
-  font-size: 2.2em;
+  font-size: 1.8em;
   transition: all 0.3s ease-in-out;
 }
 
 .projectContainer a:hover {
   color: #abc;
+}
+
+@media screen and (max-width: 960px) {
+  .projectContainer {
+    grid-template-columns: 30% 70%;
+    /* grid-template-rows: 40% 60%; */
+  }
+
+  .projectContainer .flavorText {
+    font-size: 0.8em;
+  }
+
+  .projectContainer a {
+    font-size: 1.2em;
+  }
 }

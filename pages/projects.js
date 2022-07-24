@@ -2,10 +2,10 @@ import Layout from "../components/Layout";
 import utilStyles from "../styles/utils.module.css";
 import projectStyles from "../styles/Project.module.css";
 import Image from "next/image";
-import { FaGithub, FaLink } from "react-icons/fa";
+import { FaGithub, FaLink, FaMailBulk } from "react-icons/fa";
 
 export default function Projects() {
-  const title = "Some of My Work";
+  const title = "Projects";
 
   return (
     <Layout title={title}>
@@ -31,15 +31,20 @@ export default function Projects() {
               cupiditate porro repellendus quisquam.
             </p>
           </div>
-        </div>
-
-        <div className={projectStyles.linkContainer}>
-          <a href="https://www.github.com">
-            <FaGithub />
-          </a>
-          <a href="https://www.github.com">
-            <FaLink />
-          </a>
+          <div className={projectStyles.linkContainer}>
+            <a href="https://www.github.com" title="View Project on GitHub">
+              <FaGithub />
+            </a>
+            <a href="https://www.github.com" title="View the Site">
+              <FaLink />
+            </a>
+            <a
+              mailto="charliesoandso@protonmail.com"
+              title="Want to comission a site like this one? Contact me!"
+            >
+              <FaMailBulk />
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
