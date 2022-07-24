@@ -26,9 +26,27 @@
   font-weight: 300;
 }
 
+.postContents pre {
+  /* background: #fafafa; */
+  background: #313639;
+  color: goldenrod;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
 .postContainer p,
 .postContainer .postContents {
   font-weight: 400;
+}
+
+.postContainer a {
+  font-weight: 700;
+  color: #abc;
+  font-size: 1.1em;
+  border-bottom: 3px solid #abc;
 }
 
 .iconContainer {
