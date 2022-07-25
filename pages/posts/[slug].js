@@ -6,6 +6,7 @@ import styles from "../../styles/Post.module.css";
 
 import { getAllPostSlugs, getPostData } from "../../lib/getPosts";
 import { handleSharing } from "../../lib/shareSheets";
+import { formatDate } from "../../lib/dateFormatter";
 
 import { FaFacebook, FaTwitter, FaShare, FaHome } from "react-icons/fa";
 
@@ -15,7 +16,9 @@ export default function FirstPost({ postData }) {
       <div className={styles.container}>
         <div className={styles.postContainer}>
           <h1 className={styles.title}>{postData.title}</h1>
-          <h4 className={styles.postDate}>{postData.dateCreated}</h4>
+          <h4 className={styles.postDate}>
+            {formatDate(postData.dateCreated)}
+          </h4>
           {/* <p className={styles.postContents}>{postData.content}</p> */}
           <p
             className={styles.postContents}
