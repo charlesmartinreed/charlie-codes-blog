@@ -37,7 +37,8 @@
   margin: 2em 0;
 }
 
-.textContainer a {
+.textContainer a,
+.link {
   font-weight: 700;
   color: #abc;
   font-size: 1.1em;
@@ -68,4 +69,14 @@
 
 .lightText {
   color: #666;
+}
+
+.btn,
+.btnWithArrow {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 3em;
+  background-color: transparent;
+  font-size: 1.2em;
 }
