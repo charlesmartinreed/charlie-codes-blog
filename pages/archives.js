@@ -25,7 +25,7 @@ export default function Archives({ posts }) {
   return (
     <Layout title={title}>
       <h1 className={utilStyles.heading2Xl}>{title} Page</h1>
-      <main>
+      <main className={utilStyles.main}>
         {currentPosts.map((post) => (
           <ul className={utilStyles.list} key={post.id}>
             <li className={utilStyles.listItem}>
