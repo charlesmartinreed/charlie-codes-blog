@@ -71,8 +71,7 @@
   color: #666;
 }
 
-.btn,
-.btnWithArrow {
+.btn {
   border: none;
   outline: none;
   cursor: pointer;

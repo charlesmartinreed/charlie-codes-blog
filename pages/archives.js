@@ -24,25 +24,28 @@ export default function Archives({ posts }) {
 
   return (
     <Layout title={title}>
-      <h1 className={utilStyles.headingXl}>{title} Page</h1>
-      {currentPosts.map((post) => (
-        <ul className={utilStyles.list} key={post.id}>
-          <li className={utilStyles.listItem}>
-            <Link href={`/posts/${post.slug}`}>
-              <a className={utilStyles.link}>{post.title}</a>
-            </Link>
-          </li>
-        </ul>
-      ))}
+      <h1 className={utilStyles.heading2Xl}>{title} Page</h1>
+      <main>
+        {currentPosts.map((post) => (
+          <ul className={utilStyles.list} key={post.id}>
+            <li className={utilStyles.listItem}>
+              <Link href={`/posts/${post.slug}`}>
+                <a className={utilStyles.link}>{post.title}</a>
+              </Link>
+            </li>
+          </ul>
+        ))}
+      </main>
+
       <button
-        className={`${utilStyles.btnWithArrow} ${utilStyles.btnLeft}`}
+        className={utilStyles.btn}
         disabled={pageNumber <= 0 ? true : false}
         onClick={() => handlePageDecrement()}
       >
         Previous Page
       </button>
       <button
-        className={`${utilStyles.btnWithArrow} ${utilStyles.btnRight}`}
+        className={utilStyles.btn}
         disabled={
           pageNumber >= 0 && pageNumber < posts.length - 1 ? false : true
         }
