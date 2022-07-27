@@ -1,12 +1,6 @@
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
-
-export async function loadProjects() {
-  const res = await fetch(`http://localhost:3000/api/projects`);
-  const data = await res.json();
-
-  return data;
-}
+import { loadProjects } from "../lib/getProjects";
 
 export default function Projects({ projects }) {
   const title = "Projects";
@@ -14,9 +8,7 @@ export default function Projects({ projects }) {
   return (
     <Layout title={title}>
       {projects.map((project) => (
-        <>
-          <ProjectCard project={project} key={project.title} />
-        </>
+        <ProjectCard project={project} key={project.title} />
       ))}
     </Layout>
   );
