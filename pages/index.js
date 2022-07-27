@@ -26,6 +26,7 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
+  const frontPagePostCount = 5;
   const posts = getSortedPostsData();
 
   // const data = [
@@ -36,7 +37,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts,
+      posts: posts.slice(0, frontPagePostCount),
     },
   };
 }

@@ -7,6 +7,7 @@ export default function Posts({ posts }) {
   return (
     <>
       <div className={styles.grid}>
+        <h2 className={styles.descriptionSM}>Recent Posts</h2>
         <ul>
           {posts.map(({ id, slug, title, dateCreated, summary, content }) => (
             <li key={id}>
