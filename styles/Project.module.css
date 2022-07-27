@@ -68,7 +68,7 @@
 }
 
 .projectContainer a:hover {
-  color: #abc;
+  color: rgb(119, 156, 194);
 }
 
 @media screen and (max-width: 960px) {
