@@ -50,7 +50,7 @@
 
 .footer a:hover {
   transform: translateX(5px);
-  color: #abc;
+  color: rgb(119, 156, 194);
 }
 
 /* copied from home */
@@ -103,7 +103,7 @@
 
 .grid .link {
   font-weight: 700;
-  color: #abc;
+  color: rgb(119, 156, 194);
   font-size: 1.1em;
 }
 

@@ -35,30 +35,31 @@ export default function Archives({ posts }) {
             </li>
           </ul>
         ))}
+        <div className={utilStyles.btnContainer}>
+          <button
+            className={utilStyles.btn}
+            disabled={pageNumber <= 0 ? true : false}
+            onClick={() => handlePageDecrement()}
+          >
+            Older
+          </button>
+          <button
+            className={utilStyles.btn}
+            disabled={
+              pageNumber >= 0 && pageNumber < posts.length - 1 ? false : true
+            }
+            onClick={() => handlePageIncrement()}
+          >
+            Newer
+          </button>
+        </div>
       </main>
-
-      <button
-        className={utilStyles.btn}
-        disabled={pageNumber <= 0 ? true : false}
-        onClick={() => handlePageDecrement()}
-      >
-        Previous Page
-      </button>
-      <button
-        className={utilStyles.btn}
-        disabled={
-          pageNumber >= 0 && pageNumber < posts.length - 1 ? false : true
-        }
-        onClick={() => handlePageIncrement()}
-      >
-        Next Page
-      </button>
     </Layout>
   );
 }
 
 export async function getStaticProps() {
-  const pageItemCount = 5;
+  const pageItemCount = 10;
   const postData = getSortedPostsData();
   let posts = [];
 

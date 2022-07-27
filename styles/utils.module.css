@@ -40,9 +40,9 @@
 .textContainer a,
 .link {
   font-weight: 700;
-  color: #abc;
+  color: rgb(119, 156, 194);
   font-size: 1.1em;
-  /* border-bottom: 3px solid #abc; */
+  /* border-bottom: 3px solid rgb(119, 156, 194); */
 }
 
 .borderCircle {
@@ -81,13 +81,24 @@
   color: #666;
 }
 
+.btnContainer {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .btn {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 0.5em 3em;
-  background-color: transparent;
+  padding: 0.5em 2em;
+  /* background-color: transparent; */
   font-size: 1.2em;
+  color: #333;
+}
+
+.btn:disabled {
+  color: #777;
+  cursor: default;
 }
 
 @media screen and (max-width: 500px) {

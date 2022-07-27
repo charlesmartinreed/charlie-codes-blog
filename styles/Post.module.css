@@ -44,9 +44,9 @@
 
 .postContainer a {
   font-weight: 700;
-  color: #abc;
+  color: rgb(119, 156, 194);
   font-size: 1.1em;
-  border-bottom: 3px solid #abc;
+  border-bottom: 3px solid rgb(119, 156, 194);
 }
 
 .iconContainer {
@@ -67,7 +67,7 @@
 }
 
 .iconContainer .icons:hover {
-  color: #abc;
+  color: rgb(119, 156, 194);
 }
 
 .homeBtn {
