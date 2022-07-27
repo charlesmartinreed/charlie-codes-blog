@@ -1,16 +1,28 @@
 import Link from "next/link";
-import Head from "next/head";
-import Script from "next/script";
 import Layout from "../../components/Layout";
 import styles from "../../styles/Post.module.css";
 
+import { useRouter } from "next/router";
+import { useEffect, useRef } from "react";
+
 import { getAllPostSlugs, getPostData } from "../../lib/getPosts";
-import { handleSharing } from "../../lib/shareSheets";
 import { formatDate } from "../../lib/dateFormatter";
 
-import { FaFacebook, FaTwitter, FaShare, FaHome } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaHome } from "react-icons/fa";
 
 export default function FirstPost({ postData }) {
+  const router = useRouter();
+  const currentURLRef = useRef(null);
+
+  useEffect(() => {
+    if (router.isReady) {
+      // keep an eye on this
+      // the window URL SHOULD be ready at this point
+      // if I'm reading the documentation correctly
+      currentURLRef.current = window.location.href;
+    }
+  });
+
   return (
     <Layout title={postData.title} content={postData.summary}>
       <div className={styles.container}>
@@ -32,25 +44,18 @@ export default function FirstPost({ postData }) {
             </a>
           </Link>
           <a
-            href="#!"
+            href={`https://www.facebook.com/sharer/sharer.php?u=${currentURLRef.current}`}
             title="Share on Facebook"
-            onClick={() => handleSharing("facebook")}
+            rel={currentURLRef.current}
           >
             <FaFacebook className={styles.icons} />
           </a>
           <a
-            href="#!"
+            href={`https://www.twitter.com/intent/tweet?text=${postData.summary}`}
             title="Share on Twitter"
-            onClick={() => handleSharing("twitter")}
+            rel={currentURLRef.current}
           >
             <FaTwitter className={styles.icons} />
-          </a>
-          <a
-            href="#!"
-            title="Copy Link To Blog Post"
-            onClick={() => handleSharing("web")}
-          >
-            <FaShare className={styles.icons} />
           </a>
         </div>
       </div>
