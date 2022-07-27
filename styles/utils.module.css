@@ -77,6 +77,11 @@
   margin: 0 0 1.25rem;
 }
 
+.listItem span {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
+
 .lightText {
   color: #666;
 }
@@ -91,7 +96,7 @@
   outline: none;
   cursor: pointer;
   padding: 0.5em 2em;
-  /* background-color: transparent; */
+  background-color: transparent;
   font-size: 1.2em;
   color: #333;
 }

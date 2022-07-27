@@ -29,9 +29,12 @@ export default function Archives({ posts }) {
         {currentPosts.map((post) => (
           <ul className={utilStyles.list} key={post.id}>
             <li className={utilStyles.listItem}>
-              <Link href={`/posts/${post.slug}`}>
-                <a className={utilStyles.link}>{post.title}</a>
-              </Link>
+              <>
+                <Link href={`/posts/${post.slug}`}>
+                  <a className={utilStyles.link}>{post.title}</a>
+                </Link>
+                <span>{post.dateCreated}</span>
+              </>
             </li>
           </ul>
         ))}
