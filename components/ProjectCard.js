@@ -4,7 +4,7 @@ import { FaGithub, FaLink, FaMailBulk } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className={projectStyles.projectContainer}>
+    <div className={projectStyles.projectContainer} key={project.title}>
       <div className={projectStyles.imgContainer}>
         <Image
           width={800}

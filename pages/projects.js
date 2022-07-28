@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
-import { loadProjects } from "../lib/getProjects";
+// import { loadProjects } from "../lib/getProjects";
+import { projects } from "../data/projects.json";
 
 export default function Projects({ projects }) {
   const title = "Projects";
@@ -15,6 +16,5 @@ export default function Projects({ projects }) {
 }
 
 export async function getStaticProps() {
-  const projects = await loadProjects();
-  return { props: { projects: projects["projects"] } };
+  return { props: { projects } };
 }

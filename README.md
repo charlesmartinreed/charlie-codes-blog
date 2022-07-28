@@ -1,3 +1,3 @@
 # TODOS
 
-1. Make a 404 page
+1. Prepare for deployment.
