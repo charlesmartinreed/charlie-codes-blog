@@ -1,87 +1,76 @@
-.projectContainer {
-  min-height: 40vh;
-  display: grid;
-  grid-template-columns: 55% 35%;
-  width: 85%;
-  box-shadow: 12px 8px 28px rgba(51, 51, 51, 0.3);
-  border-radius: 8px;
-
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.projectContainer .heading2Xl {
-  font-size: 1.9em;
-  line-height: 1.2;
-  margin: 1rem 0;
-  font-weight: 800;
-}
-
-.projectContainer h1,
-.projectContainer h2,
-.projectContainer h3,
-.projectContainer h4,
-.projectContainer h5,
-.projectContainer h6 {
-  text-align: center;
-  padding-bottom: 0.75em;
-}
-
-.projectContainer .imgContainer {
-  padding-left: 15px;
-}
-
-.projectContainer img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 4px;
-}
-
-.projectContainer .linkContainer {
-  /* background-color: orange; */
-  height: 100%;
+.projectCard {
+  height: 600px;
+  width: 95%;
+  margin: 0 auto;
+  /* background-color: red; */
+  padding: 1.5em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  box-shadow: 3px 4px 19px rgba(51, 51, 51, 0.3);
+  border-radius: 9px;
 }
 
-.projectContainer .descriptionContainer {
+.projectCard .imageContainer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.projectCard .image {
+  /* max-width: 100%; */
+  /* max-height: 100%; */
+  object-fit: cover;
+}
+
+.projectCard .textContainer {
   text-align: center;
-  line-height: 1.6em;
-  text-align: right;
+  width: 85%;
 }
 
-.projectContainer .flavorText {
-  font-size: 0.9em;
-  width: 90%;
-  line-height: 1.4em;
-  letter-spacing: 0.02em;
+.projectCard .textContainer h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
 }
 
-.projectContainer a {
+.projectCard .textContainer p {
+  line-height: 1.8em;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.projectCard .linkContainer a {
   cursor: pointer;
-  color: #777;
+  color: #555;
   margin: 0.7em;
-  font-size: 1.8em;
+  font-size: 1.35em;
   transition: all 0.3s ease-in-out;
 }
 
-.projectContainer a:hover {
+.projectCard .linkContainer a:hover {
   color: rgb(119, 156, 194);
 }
 
-@media screen and (max-width: 960px) {
-  .projectContainer {
-    grid-template-columns: 30% 70%;
-    /* grid-template-rows: 40% 60%; */
-  }
+.btnContainer {
+  margin-top: 1em;
+  text-align: center;
+}
 
-  .projectContainer .flavorText {
-    font-size: 0.8em;
-  }
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1em;
+  background-color: transparent;
+  font-size: 2em;
+  color: #222;
+  transition: all 0.3s ease-in-out;
+}
 
-  .projectContainer a {
-    font-size: 1.2em;
-  }
+.btn:hover {
+  transform: scale(1.1);
 }

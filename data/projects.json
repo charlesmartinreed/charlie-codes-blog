@@ -6,13 +6,6 @@
       "project_img_src": "/images/project-temp-img.png",
       "project_github": "https://www.github.com/charlesmartinreed",
       "project_website": "https://duckduckgo.com"
-    },
-    {
-      "project_title": "Test Project Title",
-      "project_description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, reiciendis necessitatibus cupiditate optio id voluptatum consectetur ex obcaecati! Ducimus culpa, quia cupiditate porro repellendus quisquam",
-      "project_img_src": "/images/project-temp-img.png",
-      "project_github": "https://www.github.com/charlesmartinreed",
-      "project_website": "https://duckduckgo.com"
     }
   ]
 }

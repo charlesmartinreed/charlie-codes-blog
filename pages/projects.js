@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Head from "next/head";
 import ProjectCard from "../components/ProjectCard";
 // import { loadProjects } from "../lib/getProjects";
 import { projects } from "../data/projects.json";
