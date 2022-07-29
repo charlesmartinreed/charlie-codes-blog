@@ -27,6 +27,7 @@
 .projectCard .textContainer {
   text-align: center;
   width: 85%;
+  transition: all 0.4s linear;
 }
 
 .projectCard .textContainer h1 {
@@ -55,11 +56,6 @@
   color: rgb(119, 156, 194);
 }
 
-.btnContainer {
-  margin-top: 1em;
-  text-align: center;
-}
-
 .btn {
   border: none;
   outline: none;
@@ -73,4 +69,29 @@
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+.carouselContainer {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselBtn {
+  height: 26px;
+  width: 26px;
+  margin: 8px;
+  border-radius: 50%;
+  background-color: #777;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carouselBtn.active {
+  transform: scale(1.23);
+  background-color: #222;
 }
