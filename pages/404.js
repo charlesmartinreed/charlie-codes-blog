@@ -14,7 +14,7 @@ export default function PageNotFound() {
     <main className={errorStyles.main}>
       <h1 className={errorStyles.heading}>Nope.</h1>
       <p className={errorStyles.subheading}>
-        Don't worry, I'm sending you somewhere safe.
+        {"Don't worry, I'm sending you somewhere safe."}
       </p>
     </main>
   );
