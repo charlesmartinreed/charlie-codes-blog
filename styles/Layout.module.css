@@ -17,6 +17,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-name: rise;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(5em);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .footer {
