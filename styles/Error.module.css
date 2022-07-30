@@ -6,9 +6,17 @@
   margin: 1rem 0;
 }
 
+.subheading {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0 0 2rem 0;
+  font-weight: 400;
+}
+
 .main {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
