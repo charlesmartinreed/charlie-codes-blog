@@ -14,7 +14,7 @@ export default function Home({ posts }) {
           <h1 className={styles.title}>{siteTitle}</h1>
 
           <p className={styles.description}>
-            <code className={styles.code}>TODO: Put a witty phrase here</code>
+            <code>TODO: Put a witty phrase here</code>
           </p>
 
           <Posts posts={posts} />

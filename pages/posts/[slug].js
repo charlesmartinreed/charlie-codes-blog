@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import Footer from "../../components/Footer";
+
 import styles from "../../styles/Post.module.css";
 
 import { useRouter } from "next/router";

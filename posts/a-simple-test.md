@@ -9,9 +9,6 @@ And now I'm checking **to see if markdown parsing** is _working_ correctly.
 
 [This is a test link](https://www.duckduckgo.com)
 
-```javascript
-const values = ["🕺🏿", false, {}, () => {}, 15];
-for (let i of values) {
-  console.log(typeof i);
-}
-```
+`const values = ["🕺🏿", false, {}, () => {}, 15]; for (let i of values) { console.log(typeof i); }`
+
+Testing the close to see if this "fixes" the layout issue.
