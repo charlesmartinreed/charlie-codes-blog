@@ -11,6 +11,7 @@
 .postContainer {
   line-height: 2.1em;
   margin-left: 1em;
+  /* max-width: 100%; */
   /* margin: 1.5em 0; */
   /* padding: 0 0.5em; */
 }
@@ -114,5 +115,15 @@
 
   .iconContainer .icons {
     font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .container {
+    width: 100%;
+  }
+
+  .postContainer pre {
+    padding: 0.5rem;
   }
 }
