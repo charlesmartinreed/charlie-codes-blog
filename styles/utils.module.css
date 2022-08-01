@@ -28,8 +28,6 @@
 }
 
 .textContainer {
-  /* min-width: 60%; */
-  /* max-width: 60%; */
   width: 80%;
   line-height: 1.8em;
 }
@@ -41,9 +39,8 @@
 .textContainer a,
 .link {
   font-weight: 700;
-  color: rgb(119, 156, 194);
+  color: var(--color-blue-accent);
   font-size: 1.1em;
-  /* border-bottom: 3px solid rgb(119, 156, 194); */
 }
 
 .borderCircle {
@@ -57,7 +54,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .colorInherit {
@@ -84,7 +80,7 @@
 }
 
 .lightText {
-  color: #666;
+  color: var(--color-gray-main);
 }
 
 .btnContainer {
@@ -99,11 +95,11 @@
   padding: 0.5em 2em;
   background-color: transparent;
   font-size: 1.2em;
-  color: #333;
+  color: var(--color-gray-dark);
 }
 
 .btn:disabled {
-  color: #777;
+  color: var(--color-gray-main);
   cursor: default;
 }
 
