@@ -9,8 +9,8 @@
   align-items: center;
   /* border: 2px solid rgba(142, 142, 142, 0.25); */
 
-  box-shadow: 3px 7px 12px rgba(151, 151, 151, 0.4),
-    -6px -7px 9px rgba(151, 151, 151, 0.2);
+  box-shadow: 3px 7px 12px rgba(52, 70, 88, 0.4),
+    -6px -7px 9px rgba(52, 70, 88, 0.2);
   border-radius: 9px;
 }
 
@@ -90,7 +90,7 @@
   width: 26px;
   margin: 8px;
   border-radius: 50%;
-  background-color: var(--color-gray-main);
+  background-color: var(--color-gray-dark);
   outline: none;
   border: none;
   cursor: pointer;

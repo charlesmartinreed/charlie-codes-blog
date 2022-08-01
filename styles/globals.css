@@ -1,7 +1,7 @@
 /* variable definitions */
 :root {
   --color-bg-light: #faf9f6;
-  --color-bg-dark: #191e21;
+  --color-bg-dark: #151a1e;
   --color-blue-main: #344658;
   --color-blue-accent: #779cc2;
   --color-black-main: #222;
@@ -15,15 +15,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-  font-family: "Merriweather", serif;
-
-  background-color: var(--color-bg-light);
-}
-
-body.darkMode {
-  background-color: var(--color-bg-dark);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -52,11 +45,9 @@ small {
   margin: 1em 0;
 }
 
-/* redundant but fixes the layout issue with the footer on pages where HTML is passed in dangerously */
-
 footer {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* justify-content: center; */
   /* align-items: center; */
   width: 80%;
@@ -70,21 +61,24 @@ footer a {
   /* align-items: center; */
   /* flex-grow: 1; */
   padding: 0.5em;
-  font-weight: 600;
+  font-weight: 400;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace; */
-  /* color: var(--color-black-main); */
   transition: all 0.2s ease-in;
   margin: 0 auto;
   text-transform: uppercase;
   letter-spacing: 0.015em;
+  color: var(--color-gray-dark);
 }
 
 footer a:hover {
   transform: translateX(5px);
   color: var(--color-blue-accent);
+}
+
+footer span {
+  font-size: 1.6em;
+  color: var(--color-blue-main);
 }
 
 pre,
@@ -108,5 +102,19 @@ code {
 
   footer {
     width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html,
+  body {
+    background-color: var(--color-bg-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: var(--color-bg-dark);
   }
 }

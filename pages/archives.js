@@ -44,7 +44,7 @@ export default function Archives({ posts }) {
             disabled={pageNumber <= 0 ? true : false}
             onClick={() => handlePageDecrement()}
           >
-            Older
+            &larr; Older
           </button>
           <button
             className={utilStyles.btn}
@@ -53,7 +53,7 @@ export default function Archives({ posts }) {
             }
             onClick={() => handlePageIncrement()}
           >
-            Newer
+            Newer &rarr;
           </button>
         </div>
       </main>

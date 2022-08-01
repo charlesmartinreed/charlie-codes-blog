@@ -9,6 +9,7 @@ export default function Footer() {
       <Link href="/archives">
         <a>Archives</a>
       </Link>
+      <span>{"{ }"}</span>
       <Link href="/projects">
         <a>Projects</a>
       </Link>
