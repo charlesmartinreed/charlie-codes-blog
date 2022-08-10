@@ -1,6 +1,7 @@
 ---
 title: "A simple test"
 summary: "dummy data, just testing the sort method."
+tags: "Experiments, Random Thoughts, Programming, Markdown"
 ---
 
 # Dummy data, just testing the sort method. ✌🏿

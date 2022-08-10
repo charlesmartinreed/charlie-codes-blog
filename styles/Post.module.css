@@ -6,6 +6,17 @@
   gap: 1.5em;
 }
 
+.postContainer img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 4px;
+  margin: 0 auto;
+  /* padding-bottom: 16px; */
+  margin-bottom: 2em;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
 .postContainer {
   line-height: 2.1em;
   display: flex;
@@ -21,11 +32,13 @@
   font-size: 3em;
   font-weight: 800;
   line-height: 1.1em;
+  text-align: center;
 }
 
 .postContainer .postDate {
   color: var(--color-gray-dark);
   font-weight: 300;
+  text-align: center;
 }
 
 .postContainer p,
@@ -91,9 +104,25 @@
     grid-template-columns: 1fr;
   }
 
+  .postContainer .title {
+    margin-top: -1em;
+    margin-bottom: -0.25em;
+  }
+
+  .postContainer img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: 1em;
+    margin-top: -1em;
+  }
+
   .postContainer pre,
   .postContainer code {
     padding: 0.4rem;
     overflow: auto;
+  }
+
+  .iconContainer .icons {
+    margin-top: -1em;
   }
 }
