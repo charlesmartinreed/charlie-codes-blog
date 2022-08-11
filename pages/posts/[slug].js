@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react";
 import { getAllPostSlugs, getPostData } from "../../lib/getPosts";
 import { formatDate } from "../../lib/dateFormatter";
 
-import { FaFacebook, FaTwitter, FaHome } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaArrowAltCircleLeft } from "react-icons/fa";
 
 export default function FirstPost({ postData }) {
   const router = useRouter();
@@ -42,7 +42,7 @@ export default function FirstPost({ postData }) {
         <div className={styles.iconContainer}>
           <Link href="/">
             <a title="Back to Home Page">
-              <FaHome className={styles.icons} />
+              <FaArrowAltCircleLeft className={styles.icons} />
             </a>
           </Link>
           <a

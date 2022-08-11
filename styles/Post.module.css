@@ -2,8 +2,9 @@
   max-width: 1200px;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 1.5em;
+  /* grid-template-columns: 4fr 1fr; */
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
 }
 
 .postContainer img {
@@ -37,7 +38,7 @@
 
 .postContainer .postDate {
   color: var(--color-gray-dark);
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -55,20 +56,25 @@
 
 .iconContainer {
   display: flex;
-  height: 100vh;
-  flex-direction: column;
+  height: 10vh;
+  order: -1;
+  flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  /* background-color: red; */
+  width: 60%;
+  margin: 0 auto;
 }
 
 .iconContainer .icons {
-  font-size: 2em;
-  color: var(--color-gray-dark);
+  font-size: 34px;
+  /* color: var(--color-black-main); */
   transition: all 0.3s ease-in-out;
 }
 
 .iconContainer .icons:hover {
   color: var(--color-blue-accent);
+  transform: rotate(20deg);
 }
 
 @media screen and (max-width: 980px) {
@@ -92,10 +98,6 @@
     align-self: flex-end;
     /* max-width: 600px; */
   }
-
-  .iconContainer .icons {
-    font-size: 1.5em;
-  }
 }
 
 @media screen and (max-width: 525px) {
@@ -105,7 +107,7 @@
   }
 
   .postContainer .title {
-    margin-top: -1em;
+    margin-top: -0.5em;
     margin-bottom: -0.25em;
   }
 
@@ -123,6 +125,6 @@
   }
 
   .iconContainer .icons {
-    margin-top: -1em;
+    margin-bottom: 1.5em;
   }
 }
