@@ -13,6 +13,7 @@ import { formatDate } from "../../lib/dateFormatter";
 import { FaFacebook, FaTwitter, FaArrowAltCircleLeft } from "react-icons/fa";
 
 export default function FirstPost({ postData }) {
+  const tagArray = postData.tags.split(",");
   const router = useRouter();
   const currentURLRef = useRef(null);
 
@@ -33,6 +34,13 @@ export default function FirstPost({ postData }) {
           <h4 className={styles.postDate}>
             {formatDate(postData.dateCreated)}
           </h4>
+          <div className={styles.tagContainer}>
+            {tagArray.map((tag) => (
+              <p key={tag} className={styles.tag}>
+                #{tag}
+              </p>
+            ))}
+          </div>
           {/* <p className={styles.postContents}>{postData.content}</p> */}
           <p
             className={styles.postContents}

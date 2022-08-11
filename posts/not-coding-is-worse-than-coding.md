@@ -2,6 +2,7 @@
 title: "Not coding is worse than coding"
 summary: "Say that daily, like a mantra."
 tags: "On a Personal Note, For The Culture, Random Thoughts"
+date: "August 11 2022"
 ---
 
 ![A gif animation of some cool little glowing dots I created today](/images/glowing-little-gif.gif)

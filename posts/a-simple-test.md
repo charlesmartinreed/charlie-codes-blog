@@ -2,6 +2,7 @@
 title: "A simple test"
 summary: "dummy data, just testing the sort method."
 tags: "Experiments, Random Thoughts, Programming, Markdown"
+date: "July 28 2022"
 ---
 
 # Dummy data, just testing the sort method. ✌🏿
