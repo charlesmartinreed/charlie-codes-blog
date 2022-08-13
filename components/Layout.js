@@ -3,6 +3,7 @@ import styles from "../styles/Layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import Search from "./Search";
 
 export const siteTitle = "Minimum Viable";
 
