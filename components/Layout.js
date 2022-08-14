@@ -25,6 +25,7 @@ export default function Layout({ children, title, content }) {
       </Head>
 
       <main className={styles.main}>
+        <Search />
         {children}
         <Footer />
       </main>
