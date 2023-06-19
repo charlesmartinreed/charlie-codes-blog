@@ -13,7 +13,8 @@ export default function Footer() {
       <Link href="/projects">
         <a>Projects</a>
       </Link>
-      <Link href="/contact">
+      {/* for the time being, until I suss out the projects layout... it's outta here! */}
+      <Link href="#">
         <a>Reach Out</a>
       </Link>
     </footer>
